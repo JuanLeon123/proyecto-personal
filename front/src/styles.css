@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: block;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.header li {
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0 20px;
+}
+
+.header div {
+    display: block;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+}
+
+.nav__menu {
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #1AB7D9 !important;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.main h5 {
+    font-size: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #0D6380;
+    padding-bottom: 1rem;
+}
+
+.main div {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.main ul {
+    list-style: none;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: #E5E5E5;
+}
+
+.footer p {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.footer img {
+    width: 5%;
+}
+
+.titulop {
+    color: #0D6380;
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.cardp {
+    padding-top: 1rem;
+    text-align: center;
+    align-items: center;
+    background-color: none !important;
+    background-clip: none !important;
+    border: none !important;
+    border-radius: none !important;
+    transition: transform 2s;
+}
+
+.cardp img {
+    width: 200px;
+}
+
+.divp {
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.cardp {
+    padding-top: 1rem;
+    text-align: center;
+    align-items: center;
+    background-color: none;
+    background-clip: none;
+    border: none;
+    border-radius: none;
+}
+
+.cardp img {
+    width: 200px;
+}
+
+.section {
+    display: block;
+    text-align: center;
+}
+
+.mainr {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.mainr img {
+    border-radius: 2rem;
+}
+
+label {
+    color: #E3531B;
+}
+
+#contactop {
+    color: #E3531B;
+}
+
+.slide {
+    margin-top: 1rem;
+}
+
+.slide img {
+    height: 350px;
+    width: 350px;
+    border-radius: 2rem;
+}
+
+.card {
+    background-color: none;
+    background-clip: none;
+    border: none;
+    border-radius: none;
+}
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    transform: scale(0.9);
+}
+
+/*Media Query*/
+/*Movil*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .header {
+        justify-items: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+
+    .main h5 {
+        font-size: 10px;
+    }
+
+    .main .slide img {
+        margin-top: 2rem;
+        height: 200px;
+        width: 200px;
+    }
+
+    .section img {
+        width: 80%;
+    }
+
+    .footer img {
+        width: 10%;
+    }
+
+    .cardp {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-color: none;
+        background-clip: none;
+        border: none;
+    }
+
+    .cardp img {
+        width: 100%;
+    }
+
+    .mainr img {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .mainr p {
+        padding-bottom: 1rem;
+        font-size: 13px;
+    }
+}
+
+/*Movil horizontal*/
+@media only screen and (min-width: 480px) and (max-width: 559px) {
+    .header {
+        justify-items: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+
+    .main h5 {
+        font-size: 20px;
+    }
+
+    .main .slide {
+        margin-top: 0px;
+    }
+
+    .main .slide img {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 3rem;
+    }
+
+    .section img {
+        width: 60%;
+    }
+
+    .footer img {
+        width: 10%;
+    }
+
+    .cardp {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-color: none;
+        background-clip: none;
+        border: none;
+    }
+
+    .mainr img {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .mainr p {
+        padding-bottom: 3rem;
+    }
+
+    .form-check-iput {
+        margin-left: 0 !important;
+    }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 600px) and (max-width: 719px) {
+    .header {
+        justify-items: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+
+    .main h5 {
+        font-size: 25px;
+    }
+
+    .section img {
+        width: 60%;
+    }
+
+    .footer img {
+        width: 10%;
+    }
+
+    .slide {
+        margin-top: 0px;
+    }
+
+    .slide img {
+        height: 280px;
+        width: 280px;
+        margin-bottom: 3rem;
+    }
+
+    .cardp {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-color: none;
+        background-clip: none;
+        border: none;
+    }
+
+    .mainr img {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .mainr p {
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+    .header {
+        justify-items: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+
+    .main h5 {
+        font-size: 25px;
+    }
+
+    .section img {
+        width: 70%;
+    }
+
+    .footer img {
+        width: 10%;
+    }
+
+    .slide {
+        margin-top: 0px;
+    }
+
+    .slide img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+
+    .cardp {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-color: none;
+        background-clip: none;
+        border: none;
+    }
+
+    .mainr img {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .mainr p {
+        padding-bottom: 1rem;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */

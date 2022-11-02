@@ -1,0 +1,15 @@
+<form class="container-fluid" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" formControlName="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span class="text-danger fw-bold" *ngIf="loginForm.get('correo')?.hasError('required') && loginForm.get('correo')?.touched">Correo obligatorio</span>
+        <span class="text-danger fw-bold" *ngIf="loginForm.get('correo')?.hasError('pattern')">Correo inválido</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" formControlName="pass" class="form-control" id="exampleInputPassword1">
+        <span class="text-danger fw-bold" *ngIf="loginForm.get('pass')?.hasError('required') && loginForm.get('pass')?.touched">Contraseña obligatoria</span>
+        <span class="text-danger fw-bold"*ngIf="loginForm.get('pass')?.hasError('pattern')">Contraseña inválida</span>
+    </div>
+    <button type="submit" class="btn btn-primary mb-5">Submit</button>
+</form>

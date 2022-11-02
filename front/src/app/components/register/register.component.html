@@ -1,0 +1,30 @@
+<form class="container-fluid" [formGroup]="registerForm" (ngSubmit)="registerUser()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre(s)</label>
+        <input type="text" formControlName="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('nombre')?.hasError('required') && registerForm.get('nombre')?.touched">Nombre(s) obligatorio(s)</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Apellido(s)</label>
+        <input type="text" formControlName="apellido" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('apellido')?.hasError('required') && registerForm.get('apellido')?.touched">Apellido(s) obligatorio(s)</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Correo</label>
+        <input type="email" formControlName="correo" class="form-control" id="exampleInputPassword1">
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('correo')?.hasError('required') && registerForm.get('correo')?.touched">Correo obligatorio</span>
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('correo')?.hasError('pattern')">Correo inválido</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" formControlName="pass" class="form-control" id="exampleInputPassword1">
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('pass')?.hasError('required') && registerForm.get('pass')?.touched">Contraseña obligatoria</span>
+        <span class="text-danger fw-bold"*ngIf="registerForm.get('pass')?.hasError('pattern')">Contraseña inválida</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Verify password</label>
+        <input type="password" formControlName="VerifyPass" class="form-control" id="exampleInputPassword1">
+        <span class="text-danger fw-bold" *ngIf="registerForm.get('VerifyPass')?.hasError('required')&& registerForm.get('VerifyPass')?.touched">Las contraseñas no coinciden</span>
+    </div>
+    <button type="submit" class="btn btn-primary mb-5">Submit</button>
+</form>
